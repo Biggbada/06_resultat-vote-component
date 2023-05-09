@@ -1,0 +1,185 @@
+:root {
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: #fff;
+    --very-light-blue: #ECF2FF;
+    --yellow: #FFB21E;
+    --blue: #1125D6;
+    --green: #00BB8F;
+    --red: #FF5555;
+    --dark-navy: #303B59;
+    --light-blue: #CAC9FF;
+    --very-light-blue: #ECF2FF;
+}
+#main-container {
+    width: 736px;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    border-radius: 32px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+#left-side {
+    width: 368px;
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    border-radius: 32px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 46px;
+    box-sizing: border-box;
+}
+
+#left-result-container {
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 0;
+    text-align: center;
+    column-gap: 20px;
+
+}
+
+#result {
+    margin: 0;
+}
+
+#eval {
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+#result {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+#comment {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: var(--light-blue);
+    width: 260px;
+}
+
+#right-side {
+    width: 368px;
+    border-radius: 32px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 38px;
+    padding-bottom: 46px;
+}
+
+#right-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--dark-navy);
+}
+
+#right-results-container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 288px;
+}
+
+.result-level {
+    width: 288px;
+    height: 56px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+}
+
+#result-level-01 {
+    color: var(--red);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+}
+#result-level-01::before {
+    content: url(pics/reaction.svg);
+    padding-left: 16px;
+    padding-right: 12px;
+    align-self: center;
+}
+
+#result-level-02 {
+    color: var(--yellow);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+}
+#result-level-02::before {
+    content: url(pics/memory.svg);
+    padding-left: 16px;
+    padding-right: 12px;
+    align-self: center;
+}
+
+#result-level-03  {
+    color: var(--green);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+}
+#result-level-03::before {
+    content: url(pics/verbal.svg);
+    padding-left: 16px;
+    padding-right: 12px;
+    align-self: center;
+}
+
+#result-level-04  {
+    color: var(--blue);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+}#result-level-04::before {
+    content: url(pics/visual.svg);
+    padding-left: 16px;
+    padding-right: 12px;
+    align-self: center;
+}
+
+
+.skill {
+    font-family: 'Hanken Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.result-level p:nth-child(2) {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    color: var(--dark-navy);
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+#continue-button {
+    width: 288px;
+    height: 56px;
+    border-radius: 128px;
+    border: 0;
+    color: white;
+    background-color: var(--dark-navy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
